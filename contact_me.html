@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!--This is the source code for the CSS that Bootstrap provides.-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--This entire nav command is the navbar. It is the default navbar made by bootstrap but tweaked a bit. The commands are pretty simple to understand. 
+    May look like gibberish to you now but just a mere gaze at the bootstrap website and you'll understand how to make it and how it works. -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="bootstrap_exp.html">Ibrahim Bati</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="bootstrap_exp.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About me</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled active" href="contact_me.html">Contact me</a>
+              </li>
+            <!--This entire upcoming part is the projects element that drops down showing all the different projects.
+            Will probably change it to a separate file with my projects in the form of cards so it will look and use
+            better.-->
+            <li class="nav-item">
+              <a class="nav-link" href="projects2.html"> Projects </a>
+            </li>
+          </ul>
+          <a class="navbar-brand" href="contact_me_dark.html"">
+            <img src="HTML/Images/bhoon.png" alt="Bootstrap" width="30" height="24">
+          </a>  
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <hr />
+      <div class="row">
+        <div class="text-center">
+          <h1 class="display-2 text">Contact me</h1>
+        </div>
+      </div>
+      <hr>
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h2>Get in touch</h2>
+            <p class="lead">Questions? Do not hesitate to contact me. I don't bite.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="">
+                    <label for="email" class="form-label">Email:</label>
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="my@email.com"
+                    class="form-control"
+                    />
+                    <div class="form-floating my-5">
+                        <input
+                        type="name"
+                        id="name"
+                        placeholder="e.g. John"
+                        class="form-control"
+                        />
+                        <label for="name" class="form-label">Name:</label>
+                   </div>
+                   <label for="subject" class="form-label">Subject:</label>
+                   <select name="subject" id="subject" class="form-select">
+                    <option value="pricing">Pricing</option>
+                    <option value="technical">Technical Question</option>
+                    <option value="personal">Personal Question</option>
+                    <option value="other">Other</option>
+                   </select>
+
+                   <div class="form-floating my-5">
+                    <textarea 
+                    name="query" 
+                    id="query" 
+                    style="height: 150px;" 
+                    class="form-control" 
+                    placeholder="Write a message."
+                    ></textarea>
+
+                    <label for="query">Write a message.</label>
+                   </div>
+
+                   <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!--This is the footer. It may seem basic to some to me it seemed elegant because I love the look of minimalistic websites.
+    It isn't very busy and down to the point. Like an online businesscard. I will make a 3d version but that will be a project 
+    and not my portfolio website. -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="bootstrap_exp.html" class="nav-link px-2 text-muted"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="about_me.html" class="nav-link px-2 text-muted"
+              >About me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact_me.html" class="nav-link px-2 text-muted disabled"
+              >Contact me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link px-2 text-muted"
+              >Projects</a
+            >
+          </li>
+         
+        </ul>
+        <p class="text-center text-muted">© 2023 Ibrahim Bati</p>
+      </footer>
+    </div>
+
+    <!--This is the source code for the JavaScript that Bootstrap provides.-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

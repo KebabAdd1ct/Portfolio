@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0.7;
+        text-align: center;
+        font-size: 1.7rem;
+        color: aliceblue;
+        transform: skew(30deg, -30deg);
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .vertikaal {
+        display: flex;
+        justify-content: center;
+        margin: 30px 20px 0 0;
+      }
+      #een {
+        object-fit: cover;
+        margin-right: 10px;
+        position: relative;
+        top: 10px;
+        left: 10%;
+        background-color: red;
+        z-index: 1;
+      }
+      #twee {
+        object-fit: cover;
+        margin-right: 10px;
+        position: relative;
+        top: -150px;
+        left: 20%;
+        background-color: blue;
+        z-index: 2;
+      }
+      #drie {
+        object-fit: cover;
+        margin-right: 10px;
+        position: relative;
+        top: -300px;
+        left: 30%;
+        background-color: green;
+        z-index: 3;
+      }
+    </style>
+    <div id="een" class="vertikaal"><br />Element 1<br />index-1</div>
+    <div id="twee" class="vertikaal"><br />Element 2<br />index-2</div>
+    <div id="drie" class="vertikaal"><br />Element drie<br />index-3</div>
+  </body>
+</html>

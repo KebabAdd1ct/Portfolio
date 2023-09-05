@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      main {
+        margin: 0;
+        padding: 5px;
+        height: 620px;
+        width: 1360px;
+        background-color: gray;
+      }
+      #element_1 {
+        background-color: orange;
+        position: fixed;
+        text-align: center;
+        left: 0px;
+        top: 0px;
+        height: 50px;
+        width: 100%;
+      }
+      #element_2 {
+        background-color: turquoise;
+        position: relative;
+        text-align: center;
+        top: -600px;
+        left: 10%;
+        height: 200px;
+        width: 200px;
+      }
+      #element_3 {
+        background-color: white;
+        position: absolute;
+        top: 38px;
+        left: 145px;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+    <div id="element_1"><strong>Fixed</strong></div>
+    <main></main>
+    <div id="element_2">Relatief</div>
+    <div id="element_3">Absoluut</div>
+  </body>
+</html>

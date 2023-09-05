@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .circle1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        background-color: transparent;
+        border-radius: 50%;
+        border-style: dashed;
+        border-color: red;
+        animation: ani 3s linear infinite;
+      }
+      .circle2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border-color: yellow;
+        background-color: yellow;
+      }
+      @keyframes ani {
+        50% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Circle CSS</h2>
+    <div class="container">
+      <div class="circle1">
+        <div class="circle2"></div>
+      </div>
+    </div>
+  </body>
+</html>
